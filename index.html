@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/ef6f855665.js"></script>
+        <!-- Local Stylesheet -->
+        <link href="match.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <!-- Title -->
+            <div class="title">
+                <h1 style="text-align: center"><span id="icon"><i class="fa fa-question-circle"></i></span>Match Game</h1>
+            </div>
+            <!-- Instructions -->
+            <div class="instructions-container">
+                <div class="instructions">
+                    <div class="rules">
+                        <h3>Rules</h3>
+                        <p>Click on a card to reveal the number on the other side. Click on a second card to try and find a match to the first. If you succed, the pair will remain revealed. If not, try again!</p>
+                    </div>
+                    <div class="how-to-win">
+                        <h3>How to Win</h3>
+                        <p>You win when all pairs have been found.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Status -->
+            <div id="status">
+                Let's get started!
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div id="content">
+            <div id="game-container">
+                <div id="game">
+                    <div class="square" data-value="1"><span></span></div>
+                    <div class="square" data-value="3"><span></span></div>
+                    <div class="square" data-value="2"><span></span></div>
+                    <div class="square" data-value="4"><span></span></div>
+                    <div class="square" data-value="5"><span></span></div>
+                    <div class="square" data-value="1"><span></span></div>
+                    <div class="square" data-value="2"><span></span></div>
+                    <div class="square" data-value="3"><span></span></div>
+                    <div class="square" data-value="4"><span></span></div>
+                    <div class="square" data-value="5"><span></span></div>
+                    <div class="square" data-value="6"><span></span></div>
+                    <div class="square" data-value="7"><span></span></div>
+                    <div class="square" data-value="8"><span></span></div>
+                    <div class="square" data-value="6"><span></span></div>
+                    <div class="square" data-value="7"><span></span></div>
+                    <div class="square" data-value="8"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div class="modal-container">
+            <div class="modal-message">
+                <div class="modal-message-text">
+                    <h1>Congratulations!!!</h1>
+                    <h3>You won the game in <span id="turns">0</span> moves!</h3>
+                    <h3><span id="best-game-message"></span></h3>
+                    <a href="">Press here to continue.</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- JQuery -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <!-- Local JS -->
+        <script src="match.js"></script>
+
+    </body>
+</html>
